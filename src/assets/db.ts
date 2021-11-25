@@ -13,7 +13,7 @@ export const GeoInfos: GeoInfo[] = [
             {
                 "location": "Sydney, Australia",
                 "address": "Suite 1308, 109 Pitt St \nSydney 2000",
-                "coordinates": " ,151.20404600000006"
+                "coordinates": "-33.8934219,151.20404600000006"
             }
         ]
     },

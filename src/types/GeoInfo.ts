@@ -4,7 +4,13 @@ export interface GeoInfo {
     organization: string;
     customerLocations: string;
     willWorkRemotely: true;
-    website: string;
+    website?: string | null;
     services: string;
-    offices: { location: string; address: string; coordinates: string }[]
+    offices: Office[]
+}
+
+export interface Office {
+    location: string;
+    address: string;
+    coordinates: string
 }

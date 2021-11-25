@@ -1,11 +1,14 @@
-class FieldTypeIsInvalidError extends Error {
-    private statusCode: number;
+import {IServiceError} from "./IServiceError";
 
-    constructor(message) {
+class FieldTypeIsInvalidError extends Error implements IServiceError {
+     statusCode: number;
+
+    constructor(message: string) {
         super(message);
         this.name = 'FieldTypeIsInvalidError';
         this.statusCode = 400;
     }
+
 }
 
 export default FieldTypeIsInvalidError;

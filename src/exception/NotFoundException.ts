@@ -1,8 +1,9 @@
+import {IServiceError} from "./IServiceError";
 
-class NotFoundException extends Error {
+class NotFoundException extends Error implements IServiceError {
     statusCode: number;
 
-    constructor(message) {
+    constructor(message: string ) {
         super(message);
         this.name = 'NotFoundException';
         this.statusCode = 404 ;
